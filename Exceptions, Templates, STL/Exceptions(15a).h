@@ -9,6 +9,6 @@ private:
 public:
 	void InvalidCharacterException();
 	void InvalidRangeException();
-	char character(char, int);
+	char character(char start, int offset);
 };
 #endif // !_EXCEPTIONS_H_
