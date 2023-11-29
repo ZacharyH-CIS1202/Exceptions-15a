@@ -5,8 +5,6 @@ using namespace std;
 
 char Character::character(char start, int offset)
 {
-	try 
-	{
 		if (!isalpha(start))
 		{
 			throw InvalidCharacterException();
@@ -14,17 +12,11 @@ char Character::character(char start, int offset)
 
 		char target = start + offset;
 
-		if (!isalpha(target))
+		if (!isalpha(target) || isupper(start) && islower(target))
 		{
 			throw InvalidRangeException();
 		}
-	}
-	catch (const InvalidCharacterException& e)
-	{
-		cerr << "Invalid Character Entered." << endl;
-	}
-	catch (const InvalidRangeException& e)
-	{
-		cerr << "The Offset Is Too Large. Invalid Character Result." << endl
-	}
+
+		cout << start << ", " << offset << " Result = ";
+		cout << target << endl;
 }

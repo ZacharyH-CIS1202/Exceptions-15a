@@ -2,10 +2,82 @@
 //
 
 #include <iostream>
+#include "Exceptions(15a).h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Character test;
+
+        try
+        {
+            test.character('a', 1);
+        }
+        catch (const Character::InvalidCharacterException& e)
+        {
+            cerr << "Invalid Character Entered." << endl;
+        }
+        catch (const Character::InvalidRangeException& e)
+        {
+            cerr << "Invalid Character Result." << endl;
+        }
+
+        try
+        {
+            test.character('a', -1);
+        }
+        catch (const Character::InvalidCharacterException& e)
+        {
+            cerr << "Invalid Character Entered." << endl;
+        }
+        catch (const Character::InvalidRangeException& e)
+        {
+            cerr << "Invalid Character Result." << endl;
+        }
+
+        try
+        {
+            test.character('Z', -1);
+        }
+        catch (const Character::InvalidCharacterException& e)
+        {
+            cerr << "Invalid Character Entered." << endl;
+        }
+        catch (const Character::InvalidRangeException& e)
+        {
+            cerr << "Invalid Character Result." << endl;
+        }
+
+        try
+        {
+            test.character('?', 5);
+        }
+        catch (const Character::InvalidCharacterException& e)
+        {
+            cerr << "Invalid Character Entered." << endl;
+        }
+        catch (const Character::InvalidRangeException& e)
+        {
+            cerr << "Invalid Character Result." << endl;
+        }
+
+        try
+        {
+            test.character('A', 32);
+        }
+        catch (const Character::InvalidCharacterException& e)
+        {
+            cerr << "Invalid Character Entered." << endl;
+        }
+        catch (const Character::InvalidRangeException& e)
+        {
+            cerr << "Invalid Character Result." << endl;
+        }
+
+
+	system("pause");
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
