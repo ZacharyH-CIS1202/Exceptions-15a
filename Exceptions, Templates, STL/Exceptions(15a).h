@@ -7,8 +7,13 @@ private:
 	char start;
 	int offset;
 public:
-	void InvalidCharacterException();
-	void InvalidRangeException();
+	Character()
+	{
+		start = 'a';
+		offset = 0;
+	}
+	class InvalidCharacterException { };
+	class InvalidRangeException{ };
 	char character(char start, int offset);
 };
 #endif // !_EXCEPTIONS_H_
