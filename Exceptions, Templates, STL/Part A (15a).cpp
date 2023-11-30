@@ -9,6 +9,11 @@ Chapter 16, Assignment 15a, Part A
 #include "Exceptions(15a).h"
 using namespace std;
 
+/************************************************************************************
+Im this driver we will use a series of try/catch blocks to check the start character
+and the result after the offset is applied. We create a class called test and then
+hard-code all of the start and offset values to match the instructions in 15a.
+***********************************************************************************/
 int main()
 {
 	Character test;
@@ -23,7 +28,7 @@ int main()
         }
         catch (const Character::InvalidRangeException& e)
         {
-            cerr << "Invalid Character Result." << endl;
+            cerr << "Invalid. Character Result Is Out Of Range." << endl;
         }
 
         try
@@ -36,7 +41,7 @@ int main()
         }
         catch (const Character::InvalidRangeException& e)
         {
-            cerr << "Invalid Character Result." << endl;
+            cerr << "Invalid. Character Result Is Out Of Range." << endl;
         }
 
         try
@@ -49,7 +54,7 @@ int main()
         }
         catch (const Character::InvalidRangeException& e)
         {
-            cerr << "Invalid Character Result." << endl;
+            cerr << "Invalid. Character Result Is Out Of Range." << endl;
         }
 
         try
@@ -62,7 +67,7 @@ int main()
         }
         catch (const Character::InvalidRangeException& e)
         {
-            cerr << "Invalid Character Result." << endl;
+            cerr << "Invalid. Character Result Is Out Of Range." << endl;
         }
 
         try
@@ -75,7 +80,7 @@ int main()
         }
         catch (const Character::InvalidRangeException& e)
         {
-            cerr << "Invalid Character Result." << endl;
+            cerr << "Invalid. Character Result Is Out Of Range." << endl;
         }
 
 
