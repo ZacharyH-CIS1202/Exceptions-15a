@@ -26,5 +26,8 @@
     <ClInclude Include="Exceptions(15a).h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Template(15b).h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
