@@ -1,5 +1,9 @@
-// Exceptions, Templates, STL.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Zachary Hartings 
+11/30/2023
+CIS 1202.201
+Chapter 16, Assignment 15a, Part A
+*/
 
 #include <iostream>
 #include "Exceptions(15a).h"
