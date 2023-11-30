@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assignment 15a.cpp">
+    <ClCompile Include="Part A %2815a%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exceptions(15a).cpp">

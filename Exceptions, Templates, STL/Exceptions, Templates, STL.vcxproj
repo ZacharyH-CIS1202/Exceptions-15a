@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Exceptions(15a).cpp" />
-    <ClCompile Include="Assignment 15a.cpp" />
+    <ClCompile Include="Part A %2815a%29.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exceptions(15a).h" />
