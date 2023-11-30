@@ -3,17 +3,9 @@
 
 class Character
 {
-private:
-	char start;
-	int offset;
 public:
-	Character()
-	{
-		start = 'a';
-		offset = 0;
-	}
 	class InvalidCharacterException { };
 	class InvalidRangeException{ };
-	char character(char start, int offset);
+	char character(char, int);
 };
 #endif // !_EXCEPTIONS_H_
